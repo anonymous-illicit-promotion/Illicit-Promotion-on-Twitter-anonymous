@@ -45,7 +45,9 @@ def write2Json(data, filename):
 path = "/data/xxx/media/"
 file_names = os.listdir(path)
 zero_size_file_names = [name for name in file_names if os.path.getsize(os.path.join(path,name)) == 0]
-data = read_data('../../data/groundtruth_dataset/Multiclass_PIP_Classifier/all_labeled_data.json')
+data = []
+data.extend(read_data('../../data/groundtruth_dataset/Binary_Multiclass_PIP_Classifier/training.json'))
+data.extend(read_data('../../data/groundtruth_dataset/Binary_Multiclass_PIP_Classifier/testing.json'))
 data = [each for each in data if each['labels']==1]
 
 multi_class_data_dict = {}
@@ -57,7 +59,7 @@ for idx,each in enumerate(label_list):
 
 idx2label = dict(zip(label_map_dict.values(), label_map_dict.keys()))
 
-with open('../../data/groundtruth_dataset/Multiclass_PIP_Classifier/subcategory_label_mapping.json','w') as f:
+with open('../../data/groundtruth_dataset/Binary_Multiclass_PIP_Classifier/subcategory_label_mapping.json','w') as f:
     json.dump(label_map_dict, f)
 
 for each in data:
@@ -85,8 +87,8 @@ for key,list_ in multi_class_data_dict.items():
     multi_class_data_eval.extend(list_[int(0.8*len(list_)):])
 
 
-write2Json(multi_class_data_train, '../../data/groundtruth_dataset/Multiclass_PIP_Classifier/subcategory_data_reprocessed_train.json')
-write2Json(multi_class_data_eval, '../data/groundtruth_dataset/Multiclass_PIP_Classifier/subcategory_data_reprocessed_eval.json')
+write2Json(multi_class_data_train, '../../data/groundtruth_dataset/Binary_Multiclass_PIP_Classifier/subcategory_data_reprocessed_train.json')
+write2Json(multi_class_data_eval, '../data/groundtruth_dataset/Binary_Multiclass_PIP_Classifier/subcategory_data_reprocessed_eval.json')
 
 random.shuffle(multi_class_data_train)
 random.shuffle(multi_class_data_eval)
