@@ -29,8 +29,7 @@ As for data, we release the training and testing dataset of the machine learning
 │      └─TweetCrawler/
 └─data
     ├─groundtruth_dataset
-    │  ├─Binary_PIP_Classifier/
-    │  ├─Multiclass_PIP_Classifier/
+    │  ├─Binary_Multiclass_PIP_Classifier/
     │  └─PIP_Contact_Extractor/
     └─PIP_sample_dataset/
 ```
