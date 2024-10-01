@@ -10,7 +10,7 @@ In this repository, the source code of the project is released for reproduction 
 - code for model training, testing and predicting. Particularly, 3 machine learning models are included, [the Binary PIP Classifier](./code/PIP_Hunter/Binary_PIP_Classifier/), [the Multiclass PIP Classifier](./code/PIP_Analyzer/Multiclass_PIP_Classifier/), and [the Contact Extractor](./code/PIP_Analyzer/PIP_Contact_Extractor/). 
 
 
-![methodology_overview](./code/methodology_overview.png)
+![methodology_overview](./code/methodology_overview.png)  
 
 ### Data
 As for data, we release the training and testing dataset of the machine learning models, as well as PIPs sampled from each illicit category. To avoid misuse by miscreants, the full dataset of PIPs and PIP-contacts will be provided upon request and background checking. Please contact the authors to request access.
