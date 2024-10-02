@@ -1,6 +1,6 @@
 # Illicit-Promotion-on-Twitter
 
-This is the repository that contains source code for the project [Illicit Promotion on Twitter](https://anonymous-illicit-promotion.github.io/). In this work, we present an extensive study of the promotion of illicit goods and services on Twitter, a popular online social network(OSN). 
+This is the repository that contains source code for the project [Illicit Promotion on Twitter](https://illicit-promotion.netlify.app/). In this work, we present an extensive study of the promotion of illicit goods and services on Twitter, a popular online social network(OSN). 
 
 ### Code
 
